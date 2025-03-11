@@ -1,8 +1,31 @@
 .footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem; // Abstand zwischen Link und Text
   }
-  
+
+  .footer-link {
+    color: #00ffcc; // Türkisfarbener Link für Auffälligkeit
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+
+    &:hover {
+      color: #ffffff; // Weiß beim Hover
+      text-decoration: underline;
+    }
+  }
+
+  span {
+    color: #aaa; // Dezenterer Farbton für den Text
+  }
+}
