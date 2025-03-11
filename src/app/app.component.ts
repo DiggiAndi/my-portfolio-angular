@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 
-// Importiere deine Komponenten hier:
+// Importiere Angular RouterOutlet
+import { RouterOutlet } from '@angular/router';
+
+// Importiere deine Komponenten:
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
@@ -12,6 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
   selector: 'app-root',
   standalone: true,
   imports: [
+    RouterOutlet,             // <<< WICHTIG: Hier hinzufügen!
     HeaderComponent,
     HomeComponent,
     AboutComponent,
