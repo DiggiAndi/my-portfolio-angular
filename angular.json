@@ -20,6 +20,14 @@
             "outputPath": "dist/my-portfolio-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
+
+            // 👉 Hier wird der Preprocessor für SCSS Variablen eingebunden!
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles"
+              ]
+            },
+
             "polyfills": [
               "zone.js"
             ],

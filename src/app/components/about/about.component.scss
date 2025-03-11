@@ -1,0 +1,46 @@
+@import '../../../styles/variables';
+
+
+.about {
+  background-color: $secondary-bg;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  .about-text {
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: $text-secondary;
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+
+  .about-counters {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+    .counter {
+      h3 {
+        font-size: 3rem;
+        color: $highlight;
+      }
+
+      p {
+        color: $text-secondary;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}

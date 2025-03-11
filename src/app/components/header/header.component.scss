@@ -1,0 +1,25 @@
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+  
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+  
+      &:hover {
+        color: #f39c12;
+      }
+    }
+  }
+  

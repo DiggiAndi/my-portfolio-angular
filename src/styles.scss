@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+// Farbschema
+$primary-bg: #121212;
+$secondary-bg: #1e1e1e;
+$text-primary: #e0e0e0;
+$text-secondary: #a0a0a0;
+$highlight: #00d084;
+$button-bg: #00d084;
+$button-hover: #00b26a;
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: $primary-bg;
+  color: $text-primary;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
