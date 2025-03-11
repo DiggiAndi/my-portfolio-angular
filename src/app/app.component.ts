@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
-// Importiere Angular RouterOutlet
+// WICHTIG: RouterOutlet importieren, um die Navigation (Routing) zu ermöglichen!
 import { RouterOutlet } from '@angular/router';
 
-// Importiere deine Komponenten:
+// Importiere deine eigenen Komponenten für Header, Footer usw.
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
@@ -14,8 +14,9 @@ import { FooterComponent } from './components/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
+  // Hier importierst du alle Komponenten, die du in der app.component.html verwendest
   imports: [
-    RouterOutlet,             // <<< WICHTIG: Hier hinzufügen!
+    RouterOutlet,             // WICHTIG: Muss rein für <router-outlet>!
     HeaderComponent,
     HomeComponent,
     AboutComponent,
@@ -23,8 +24,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     FooterComponent
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  templateUrl: './app.component.html',  // Dein Template
+  styleUrl: './app.component.scss'      // Deine Styles
 })
 export class AppComponent {
   title = 'my-portfolio-angular';

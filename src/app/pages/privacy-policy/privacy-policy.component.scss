@@ -1,42 +1,57 @@
+@import '../../../styles/variables'; 
+// Passe den Pfad ggf. an, falls deine _variables.scss woanders liegt
+
 .privacy-policy-container {
-    max-width: 900px;
-    margin: 4rem auto;
-    padding: 2rem;
-    background-color: #121212;
-    color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  
-    h1, h2 {
-      color: #00ff99;
-    }
-  
-    a {
-      color: #00ff99;
-      text-decoration: underline;
-  
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  
-    ul {
-      padding-left: 1.5rem;
-  
-      li {
-        margin-bottom: 0.5rem;
-      }
-    }
-  
-    p {
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-  
-    hr {
-      margin: 2rem 0;
-      border: 0;
-      border-top: 1px solid #444;
+  /* Abstand nach oben, falls dein Header fixiert ist (Header-Höhe ~ 6rem) */
+  margin: 6rem auto 4rem auto;
+  max-width: 900px;
+  padding: 4rem 2rem;
+  min-height: 100vh; // Genau wie Hero-Bereich
+
+
+  /* Hintergrund & Textfarben */
+  background-color: $primary-bg;   // z. B. #121212
+  color: $text-primary;            // z. B. #f0f0f0
+
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+  /* Überschriften */
+  h1, h2 {
+    color: $highlight; // z. B. #00ff99
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Links */
+  a {
+    color: $highlight; // z. B. #00ff99
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
     }
   }
-  
+
+  /* Listen */
+  ul {
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  /* Absätze */
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Trennlinie */
+  hr {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 1px solid #444;
+  }
+}

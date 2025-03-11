@@ -1,19 +1,14 @@
 import { Routes } from '@angular/router';
-
-// Importiere die Komponenten, die du in den Routen verwenden willst
-import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { OnePageComponent } from './pages/one-page/one-page.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },                 // Startseite
-  { path: 'about', component: AboutComponent },           // Über mich
-  { path: 'projects', component: ProjectsComponent },     // Projekte
-  { path: 'contact', component: ContactComponent },       // Kontakt
-  { path: 'privacy-policy', component: PrivacyPolicyComponent }, // Datenschutz
+  // One-Page für Startseite (enthält Home, About, Projects, Contact)
+  { path: '', component: OnePageComponent },
 
-  // Wildcard-Route: Fängt alles ab, was nicht definiert ist und leitet zur Startseite
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  // Extra Route für Datenschutz
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+
+  // Wildcard → alles Undefinierte → Startseite
+  { path: '**', redirectTo: '' }
 ];

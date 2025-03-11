@@ -1,10 +1,13 @@
-header {
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;              /* optional: stellt sicher, dass der Header links ausgerichtet ist */
+    width: 100%;
+    z-index: 1000;
     background-color: #222;
     color: #fff;
     padding: 1rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
   
     nav ul {
       list-style: none;
