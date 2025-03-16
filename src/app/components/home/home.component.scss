@@ -28,18 +28,29 @@
       color: $highlight;
       font-size: 1rem;
       margin-bottom: 1rem;
+      /* Auf mobilen Geräten etwas Abstand nach oben hinzufügen */
+      @media (max-width: 768px) {
+        margin-top: 2.5rem;
+      }
     }
 
     h1 {
       font-size: 3rem;
       font-weight: bold;
       margin-bottom: 1rem;
+      /* Schriftgröße auf kleineren Bildschirmen anpassen */
+      @media (max-width: 768px) {
+        font-size: 2.2rem;
+      }
     }
 
     .subtitle {
       color: $text-secondary;
       font-size: 1.25rem;
       margin-bottom: 2rem;
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
 
     .buttons {

@@ -145,3 +145,27 @@
     }
   }
 }
+
+/* ============== Media Query Fix ============== */
+/* Nur auf kleinen Bildschirmen den Button & Abstand anpassen */
+@media (max-width: 768px) {
+  .projects {
+    .project-card {
+      /* Mehr Platz unten, damit Tags & Button nicht überlappen */
+      padding-bottom: 3rem;
+
+      .btn-link {
+        /* Button verkleinern */
+        width: 60px;
+        height: 30px;
+        bottom: 10px;
+        right: 10px;
+
+        .arrow-icon {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+}

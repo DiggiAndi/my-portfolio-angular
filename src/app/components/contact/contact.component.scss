@@ -80,11 +80,17 @@
   }
 
   // ✅ Richtig strukturierte contact-form mit Animationen
+    // ✅ Kontaktformular
+    
   .contact-form {
     flex: 1;
     max-width: 500px;
     min-width: 300px;
-    margin: auto;
+
+    /* Vorher stand hier margin: auto; 
+       Jetzt entfernt, damit das Formular weiter links sitzt */
+    /* margin: auto; */
+
     display: flex;
     flex-direction: column;
     gap: 1.5rem;

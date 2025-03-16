@@ -24,5 +24,11 @@
         color: #f39c12;
       }
     }
+    /* Für Handy-Bildschirme */
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+      margin-left: -2rem; // Schiebt das Menü etwas nach links
+      gap: 1rem;         // Weniger Abstand zwischen den Links
+    }
   }
-  
+   
